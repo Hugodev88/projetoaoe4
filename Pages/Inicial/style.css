@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+}   
+
+body {
+    background-color: #0F0F11;
+}
+
+#header {
+    width: 100%;
+    height: 90px;
+    
+    display: flex; /**/ 
+    align-items: center; /* centralizar vertical */
+    justify-content: center; /* centralizar horizontal */
+}
+
+#header img {
+    margin: 0 auto;
+    height: 50px;    
+}
+
+#content {
+    width: 90%;
+    height: 80vh;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.822), rgba(15, 15, 17, 0.534)), url('../../imagens/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 20%;
+    background-position-y: 50%;
+    /* filter: brightness(0.5); */
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 15px 0;
+}
+
+#form input {
+    padding: 10px;
+    font-size: 15px;
+
+    display: flex;    
+    background: white;
+    border-radius: 17px;
+    outline: 0;
+    width: 29%;
+}
+
+#results {
+    overflow-y: auto;
+    border-radius: 17px;
+    margin: 0 auto;
+    width: 28%;
+    height: 80%;
+    background-color: #0000009c;
+    padding: 20px;
+}
+
+#results::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+
+#results::-webkit-scrollbar-track {
+background: rgb(0, 0, 0);        /* color of the tracking area */
+}
+
+#results::-webkit-scrollbar-thumb {
+background-color: rgb(108, 108, 119);    /* color of the scroll thumb */
+border-radius: 20px;       /* roundness of the scroll thumb */
+border: 3px solid rgb(0, 0, 0);  /* creates padding around scroll thumb */
+}
+
+#result {
+    margin-top: 10px;
+    padding: 20px; 
+    color: white;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2d2d30;
+    border-radius: 12px;
+    cursor: default;
+}
+
+#result:hover {
+    margin-top: 10px;
+    padding: 20px; 
+    color: white;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2d2d30;
+    border-radius: 12px;
+}
+
+#headerresult{
+    display: flex;
+    justify-content: space-between;
+}
+#contentresult{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1100px) {
+    #results {
+        border-radius: 17px;
+        margin: 0 auto;
+        width: 90%;
+        height: 80%;
+        background-color: #0000009c;
+        padding: 5px;
+    }
+    #form input {
+        padding: 10px;
+        font-size: 15px;
+    
+        display: flex;    
+        background: white;
+        border-radius: 17px;
+        outline: 0;
+        width: 90%;
+    }
+    #header {
+        width: 100%;
+        height: 50px;
+        
+        display: flex; /**/ 
+        align-items: center; /* centralizar vertical */
+        justify-content: center; /* centralizar horizontal */
+    }
+    
+    #header img {
+        margin: 0 auto;
+        height: 40px;    
+    }
+}
+
+#footer {
+    width: 100%;
+}
