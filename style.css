@@ -11,7 +11,7 @@ body {
 #header {
     width: 100%;
     height: 90px;
-    
+    margin: 2px 0 10px 0;
     display: flex; /**/ 
     align-items: center; /* centralizar vertical */
     justify-content: center; /* centralizar horizontal */
@@ -24,7 +24,7 @@ body {
 
 #content {
     width: 90%;
-    height: 80vh;
+    height: 650px;
     margin: 0 auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.822), rgba(15, 15, 17, 0.534)), url('../../imagens/bg.jpg');
     background-size: cover;
@@ -57,9 +57,9 @@ body {
     border-radius: 17px;
     margin: 0 auto;
     width: 28%;
-    height: 80%;
+    height: 500px;
     background-color: #0000009c;
-    padding: 15px;
+    padding: 10px;
 }
 
 #results::-webkit-scrollbar {
